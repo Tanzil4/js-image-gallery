@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.myh1{
+    color: white;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate; 
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px black, 0 0 40px black,
+        0 0 50px black, 0 0 60px black, 0 0 70px black;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px black, 0 0 40px black, 0 0 50px black,
+        0 0 60px black, 0 0 70px black, 0 0 80px black;
+    }
+  }
+.mypara{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    overflow: hidden; 
+    border-right: 0.15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto;     
+    margin-top: 60px;
+    letter-spacing: 0.15em; 
+    animation: typing 5s steps(35, end) infinite,
+      blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 37%;
+    }
+  }
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.main img{
+    width: 35rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem rgb(4, 46, 51);
+    overflow: hidden;
+    transition: .5s ease;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.main img:hover {
+    transform: scale(1.1);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 30px;
+    box-shadow: 0 0 13px rgb(11, 57, 71);
+    overflow: hidden;
+    transition: .3s ease;
+    margin-top: 100px;
+}
+
+.container img:hover{
+    transform: scale(1.1);
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

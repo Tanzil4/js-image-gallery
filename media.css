@@ -1,0 +1,48 @@
+@media only screen and (max-width: 686px){
+    .main img{
+        width: 25rem;
+        height: 20rem;
+    }
+
+    .myh1{
+        font-size: 30px;
+    }
+    .mypara{
+        font-size: 16px;
+    }
+
+
+    .container img{
+        margin: 20px;
+        width: 7rem;
+        height: 7rem;
+       
+    }
+    .container{
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 430px){
+    .main img{
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .myh1{
+        font-size: 20px;
+    }
+    .mypara{
+        font-size: 14px;
+    }
+
+
+    .container img{
+        margin: 10px;
+        width: 3rem;
+        height: 3rem;
+       
+    }
+    .container{
+        margin-top: 50px;
+    }
+}
